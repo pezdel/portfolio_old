@@ -21,7 +21,7 @@ export const skills: Skills[] = [
 ];
 
 
-import pezdelImg from '$lib/static/spuy4.png';
+import pezdelImg from '$lib/static/pezdel.png';
 export const pezdelInfo = {
     img: pezdelImg,
     name: 'Pezdel.com',
@@ -50,8 +50,9 @@ export const pomoInfo = {
     ]
 };
 
+import portfolioImg from '$lib/static/portfolio.png';
 export const portfolioInfo = {
-    img: pomoImg,
+    img: portfolioImg,
     name: 'Portfolio',
     link: '/',
     github: 'https://github.com/pezdel/portfolio',

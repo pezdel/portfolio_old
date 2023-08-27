@@ -16,7 +16,7 @@
 	};
 </script>
 
-<div class="grid grid-cols-8 gap-4 flex h-12 bg-primary-500 items-center">
+<div class="grid grid-cols-8 gap-4 flex h-12 bg-secondary-500 items-center">
 	<a href="/" class="col-span-3 justify-center flex space-x-1.5 flex items-center">
 		<iconify-icon
 			icon="streamline:programming-script-code-code-angle-programming-file-bracket"
@@ -26,22 +26,21 @@
 		<span class="collapse md:visible">CHILICKI</span>
 	</a>
 	<a
-		href="/skills"
-		class="btn variant-soft-primary flex h-full items-center space-x-2 [&>*]:pointer-events-none"
-		use:popup={popupSkills}
-	>
-		<iconify-icon class="text-lg" icon="clarity:list-line" />
-		<span class="collapse lg:visible">Skills</span>
-	</a>
-	<a
 		href="/projects"
-		class="btn variant-soft-primary flex h-full items-center space-x-2 [&>*]:pointer-events-none"
+		class="btn variant-ghost-secondary flex h-full items-center space-x-2 [&>*]:pointer-events-none"
 		use:popup={popupProjects}
 	>
 		<iconify-icon icon="mdi:dots-grid" class="text-lg" />
 		<span class="collapse lg:visible">Projects</span>
 	</a>
-
+	<a
+		href="/skills"
+		class="btn variant-ghost-secondary flex h-full items-center space-x-2 [&>*]:pointer-events-none"
+		use:popup={popupSkills}
+	>
+		<iconify-icon class="text-lg" icon="clarity:list-line" />
+		<span class="collapse lg:visible">Skills</span>
+	</a>
 	<div class="col-span-3 flex justify-center">
 		<LightSwitch />
 	</div>

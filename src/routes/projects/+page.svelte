@@ -9,7 +9,7 @@
 >
 	<div class="py-5 flex flex-col items-center">
 		<div class="text-5xl">What I've Made.</div>
-		<div class="font-thin">Pezdel.com being the most complex</div>
+		<div class="font-thin">Pezdel.com being the most complex.</div>
 	</div>
 	<section class="flex flex-wrap gap-7 items-center flex-col lg:flex-row md:justify-center">
 		<ProjectCard info={pezdelInfo} />

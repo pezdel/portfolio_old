@@ -21,13 +21,15 @@
 <div class="flex flex-col flex-1 items-center justify-center py-5">
 	<div class="py-3 flex flex-col items-center">
 		<div class="text-5xl">What I Use.</div>
-		<div class="font-thin">Items in no particular order. Some smaller items were left off.</div>
+		<div class="font-thin">
+			Items are in no specific order. Some smaller technologies have been left off.
+		</div>
 	</div>
 	<div class="flex flex-wrap max-w-4xl justify-center items-center gap-5">
 		{#each skills as item}
 			<div
 				title={item.name}
-				class="card h-48 w-48 flex flex-col items-center space-y-3 justify-center"
+				class="card card-hover shadow-sm hover:shadow-md shadow-surface-500 hover:shadow-surface-500 dark:shadow-surface-300 hover:shadow-surface-300 h-48 w-48 flex flex-col items-center space-y-3 justify-center"
 			>
 				<iconify-icon class="text-8xl" icon={item.icon} />
 				<span>{item.name}</span>
