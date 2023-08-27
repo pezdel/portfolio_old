@@ -1,2 +1,2 @@
 # portfolio
-Link -- pezdel-portfolio.vercel.app
+Link -- https://pezdel-portfolio.vercel.app
