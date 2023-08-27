@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { SlideItem } from '$lib/components';
+	//import { SlideItem } from '$lib/components';
 	import { skills, options } from '$lib/utils';
-	import { Splide } from '@splidejs/svelte-splide';
+	//import { Splide } from '@splidejs/svelte-splide';
 	import '@splidejs/svelte-splide/css/core';
 	import { onMount } from 'svelte';
 	import { register } from 'swiper/element/bundle';
@@ -24,12 +24,45 @@
 			</a>
 		</div>
 
-		<div class="flex justify-center">
-			<Splide aria-label="My Favorite Images" {options}>
+		<!-- <div class="flex justify-center"> -->
+		<!-- 	<Splide aria-label="My Favorite Images" {options}> -->
+		<!-- 		{#each skills as slide} -->
+		<!-- 			<SlideItem {slide} /> -->
+		<!-- 		{/each} -->
+		<!-- 	</Splide> -->
+
+		<!-- </div> -->
+
+		<div class="flex justify-center h-24 w-24 bg-red-200">
+			<swiper-container
+				class="mySwiper"
+				autoplay-delay="2000"
+				autoplay-disable-on-interaction="false"
+			>
 				{#each skills as slide}
-					<SlideItem {slide} />
+					<swiper-slide>
+						<div class="flex flex-col items-center">
+							<iconify-icon class="text-7xl" icon={slide.icon} />
+							<span class="font-thin">{slide.name}</span>
+						</div>
+					</swiper-slide>
 				{/each}
-			</Splide>
+			</swiper-container>
 		</div>
 	</section>
 </div>
+
+<style>
+	swiper-container {
+		width: 100%;
+		height: 100%;
+	}
+
+	swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
