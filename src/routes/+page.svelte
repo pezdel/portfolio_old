@@ -3,6 +3,12 @@
 	import { skills, options } from '$lib/utils';
 	import { Splide } from '@splidejs/svelte-splide';
 	import '@splidejs/svelte-splide/css/core';
+	import { onMount } from 'svelte';
+	import { register } from 'swiper/element/bundle';
+	// register Swiper custom elements
+	onMount(() => {
+		register();
+	});
 </script>
 
 <div class="flex flex-1 items-center self-center self-stretch px-10 py-2">
