@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { SlideItem } from '$lib/components';
 	import { skills, options } from '$lib/utils';
 	import { Splide } from '@splidejs/svelte-splide';
@@ -19,11 +20,13 @@
 		</div>
 
 		<div class="flex justify-center">
-			<Splide aria-label="My Favorite Images" {options}>
-				{#each skills as slide}
-					<SlideItem {slide} />
-				{/each}
-			</Splide>
+			{#if browser}
+				<Splide aria-label="My Favorite Images" {options}>
+					{#each skills as slide}
+						<SlideItem {slide} />
+					{/each}
+				</Splide>
+			{/if}
 		</div>
 	</section>
 </div>
