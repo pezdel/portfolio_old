@@ -14,14 +14,9 @@
 		target: 'popupProjects',
 		placement: 'bottom'
 	};
-	const popupExperiences: PopupSettings = {
-		event: 'hover',
-		target: 'popupExperiences',
-		placement: 'bottom'
-	};
 </script>
 
-<div class="grid grid-cols-9 gap-4 flex h-12 bg-primary-500 items-center">
+<div class="grid grid-cols-8 gap-4 flex h-12 bg-primary-500 items-center">
 	<a href="/" class="col-span-3 justify-center flex space-x-1.5 flex items-center">
 		<iconify-icon
 			icon="streamline:programming-script-code-code-angle-programming-file-bracket"
@@ -46,14 +41,7 @@
 		<iconify-icon icon="mdi:dots-grid" class="text-lg" />
 		<span class="collapse lg:visible">Projects</span>
 	</a>
-	<a
-		href="/experience"
-		class="btn variant-soft-primary flex h-full items-center space-x-2 [&>*]:pointer-events-none"
-		use:popup={popupExperiences}
-	>
-		<iconify-icon icon="vaadin:toolbox" class="text-lg" />
-		<span class="collapse lg:visible">Experiences</span>
-	</a>
+
 	<div class="col-span-3 flex justify-center">
 		<LightSwitch />
 	</div>
@@ -64,7 +52,4 @@
 </div>
 <div class="visible lg:collapse card p-4 variant-filled-primary" data-popup="popupProjects">
 	<p>Projects</p>
-</div>
-<div class="visible lg:collapse card p-4 variant-filled-primary" data-popup="popupExperiences">
-	<p>Experiences</p>
 </div>
