@@ -33,7 +33,7 @@
 
 		<!-- </div> -->
 
-		<div class="flex justify-center h-24 w-24 bg-red-200">
+		<div class="flex justify-center h-24 w-24">
 			<swiper-container
 				class="mySwiper"
 				autoplay-delay="2000"
